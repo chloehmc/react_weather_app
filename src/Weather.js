@@ -8,14 +8,14 @@ export default function Weather() {
         <div className="row">
           <div className="col-9">
             <input placeholder="Enter a city" className="form-control" />
-                  </div>
-                  <div className="col-3">
-                  <input type="submit" value="Search" className="btn btn-primary" />
-                  </div>
+          </div>
+          <div className="col-3">
+            <input type="submit" value="Search" className="btn btn-primary" />
+          </div>
         </div>
       </form>
       <h1>Amsterdam</h1>
-      <h4>Monday, March 20, 00:00</h4>
+      <h5>Monday, March 20, 00:00</h5>
       <h5>Rainy</h5>
       <div className="row">
         <div className="col-6">

@@ -1,5 +1,15 @@
 .Weather {
-  color: whitesmoke;
-  border: 1px solid white;
-  padding: 75px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 60px;
+  margin: 90px;
+}
+
+.Weather form {
+  display: block;
+  text-align: center;
+}
+
+.Weather li {
+  list-style: none;
 }
