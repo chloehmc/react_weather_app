@@ -7,16 +7,24 @@ export default function Weather() {
       <form>
         <div className="row">
           <div className="col-9">
-            <input placeholder="Enter a city" className="form-control" />
+            <input
+              placeholder="Enter a city"
+              className="form-control"
+              autoFocus="on"
+            />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
       <h1>Amsterdam</h1>
-      <h5>Monday, March 20, 00:00</h5>
-      <h5>Rainy</h5>
+      <p>Monday, March 20, 00:00</p>
+      <p className="description">Rainy</p>
       <div className="row">
         <div className="col-6">
           {" "}
@@ -24,7 +32,8 @@ export default function Weather() {
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
             alt="icon"
           ></img>{" "}
-          0 °C
+          <span className="temperature">0</span>
+          <span className="unit">°C</span>
         </div>
 
         <div className="col-6">

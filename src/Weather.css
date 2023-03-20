@@ -2,12 +2,30 @@
   border: 1px solid black;
   border-radius: 20px;
   padding: 60px;
-  margin: 90px;
+  margin: 30px auto;
+  max-width: 600px;
 }
 
 .Weather form {
-  display: block;
-  text-align: center;
+  margin-bottom: 25px;
+}
+
+.Weather .description {
+  margin-top: -10px;
+}
+
+.Weather img {
+  display: inline-block;
+  margin-top: -30px;
+}
+
+.Weather .temperature {
+  font-size: 50px;
+}
+
+.Weather .unit {
+  position: relative;
+  top: -20px;
 }
 
 .Weather li {
