@@ -1,5 +1,6 @@
 import "./App.css";
 import Weather from "./Weather";
+import React from "react";
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
           <a
             href="https://github.com/chloehmc/react_weather_app"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             {" "}
             Open source code
