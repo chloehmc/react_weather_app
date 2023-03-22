@@ -12,8 +12,7 @@ export default function Weather(props) {
     setWeatherData({
       date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
-        city: response.data.city,
-      
+      city: response.data.city,
       feelsLike: response.data.temperature.feels_like,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
@@ -24,8 +23,8 @@ export default function Weather(props) {
     setLoaded(true);
   }
 
-    function search() {
-        const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=06740ta7fb3c0b6bo8bced4f1a40e926&units=metric`;
+  function search() {
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=06740ta7fb3c0b6bo8bced4f1a40e926&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -63,9 +62,6 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=06740ta7fb3c0b6bo8bced4f1a40e926&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-
-    return "Loading...";
+  search()
   }
 }
