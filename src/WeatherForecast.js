@@ -1,5 +1,5 @@
 import React from "react";
-import "./WeatherForecast.css"
+import "./WeatherForecast.css";
 
 export default function WeatherForecast(props) {
   return (
@@ -7,7 +7,10 @@ export default function WeatherForecast(props) {
       <div className="row">
         <div className="col">
           <div className="WeatherForecast-days">Thu</div>
-          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" />{" "}
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+            alt="forecast icon"
+          />{" "}
           <div className="WeatherForecast-max"> High: 10°C </div>
           <div className="WeatherForecast-min"> Low: 5°C </div>
         </div>
