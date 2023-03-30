@@ -24,6 +24,7 @@ export default function WeatherForecast() {
                 </div>
               );
             }
+            return null;
           })}
         </div>
       </div>
