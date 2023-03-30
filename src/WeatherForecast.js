@@ -6,20 +6,25 @@ import WeatherForecastDay from "./WeatherForecastDay";
 export default function WeatherForecast() {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
-  
+
   function handleResponse(response) {
     setLoaded(true);
     setForecast(response.data.daily);
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <div className="WeatherForecast">
         <div className="row">
-          <div className="col">
-            <WeatherForecastDay data={forecast[0]} />
-          </div>
+          {forecast.map(function(dailyForecast, index) {
+            if (index < 5) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
