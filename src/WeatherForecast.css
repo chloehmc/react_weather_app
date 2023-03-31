@@ -1,7 +1,11 @@
-.WeatherForecast{
-    text-align: center;
+.WeatherForecast {
+  text-align: center;
+  margin-top: 40px;
 }
-.WeatherForecast-days{
-    margin-top: 30px;
-    margin-bottom: 20px;
+.WeatherForecast-days {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.forecastIcon {
+  block-size: 80px;
 }

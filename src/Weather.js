@@ -4,7 +4,6 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
-
 export default function Weather(props) {
   const [loaded, setLoaded] = useState(false);
   const [weatherData, setWeatherData] = useState({});
@@ -60,8 +59,9 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-            <WeatherInfo data={weatherData} />
-        <WeatherForecast  /> 
+        <WeatherInfo data={weatherData} />
+        
+        <WeatherForecast />
       </div>
     );
   } else {
