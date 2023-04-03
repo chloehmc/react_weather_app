@@ -9,3 +9,10 @@
 .forecastIcon {
   block-size: 80px;
 }
+
+.WeatherForecast-max {
+  font-size: 14px;
+}
+.WeatherForecast-min {
+  font-size: 14px;
+}
