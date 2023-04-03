@@ -12,7 +12,6 @@ export default function WeatherForecast(props) {
   }, [props.city]);
 
   function handleResponse(response) {
-
     setForecastData(response.data.daily);
     setLoaded(true);
   }
@@ -35,8 +34,7 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    let apiUrl =`https://api.shecodes.io/weather/v1/forecast?query=London&key=06740ta7fb3c0b6bo8bced4f1a40e926&units=metric`;
-      //`https://api.shecodes.io/weather/v1/forecast?query=${props.city}&key=06740ta7fb3c0b6bo8bced4f1a40e926&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${props.city}&key=06740ta7fb3c0b6bo8bced4f1a40e926&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return null;
